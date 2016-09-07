@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/responsiveslides.css">
+	<link rel="stylesheet/less" type="text/css" href="/css/app.less">
+	<script src="/js/less.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<title><%- title %></title>
+</head>
+<body>
+
+<div class="fix-right">
+	<ul>
+		<li>
+			<a><i class="fa fa-wechat"></i></a>
+			<p><img src="/img/erweima.png" alt=""></p>
+		</li>
+		<li><a><i class="fa fa-qq"></i></a></li>
+		<li><a><i class="fa fa-mobile fa-lg" style="font-size: 40px;padding-left: 7px"></i></a>
+			<p style="padding-left:5px;padding-top:5px;">13266836563 <br>（陈先生）</p>
+		</li>
+		<li><a href="" class="to-up"><i class="fa fa-angle-up fa-lg" style="padding-left: 7px;"></i></a>
+			<p style="padding-left:20px;padding-top:10px;">移上顶部</p>
+		</li>
+	</ul>
+</div>	
+
+<script>
+	$('.fix-right a').hover(function() {
+		/* Stuff to do when the mouse enters the element */
+		$(this).siblings('p').css('opacity', '1');
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$(this).siblings('p').css('opacity', '0');
+	});
+
+</script>
+<header>
+<div class="top">
+	
+			<img src="/img/logo.png" alt="" width="120px;">
+			<span style="font-size: 18px;"><b>JINGFU® 景福珠宝</b></span>
+	<div class="top-right">
+
+	 	<p>中国（简体）</p>
+  </div>
+</div>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav my-nav">
+	        <li><a href="/" class="one">首页</a>
+	        <a href="/" class="en">Home</a></li>
+
+	        <li><a style="color:#b4b4b4!important">|</a></li>
+
+	        <li>
+	          <a href="/product" class="one">产品</a>
+	          <a href="/product" class="en">Product</a>
+	          
+	        </li>
+
+	       	<li><a style="color:#b4b4b4!important">|</a></li>
+
+
+	        <li>
+	          <a href="/#" class="one">案例 </a>
+	          <a href="/product" class="en">Case</a>
+	        </li>
+	      </ul>
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="/brand" style="margin-right: 2px;margin-left:15px;" class="one"><i class="fa fa-home fa-lg"></i> <i>JF</i> 品牌文化</a></li>
+	      	<li><a style="color:#b4b4b4!important">|</a></li>
+	        <li><a href="#" class="one" style="margin-left:10px;">&nbsp<i class="fa fa-cart-plus fa-lg"></i> &nbsp在线商城</a></li>
+
+	      </ul>
+
+
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</header>
+	<%-body %>
+<footer>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<p><big><big>- 关于 JINGFU</big></big></p>
+				<p><i class="fa fa-caret-right" style="color: #CFD8DC"></i> JF品牌文化</p>
+				<p><i class="fa fa-caret-right" style="color: #CFD8DC"></i> JF案例</p>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-6">
+			  <p><big><big>- 产品中心</big></big></p>
+				<p><i class="fa fa-caret-right" style="color: #CFD8DC"></i> 戒指</p>
+				<p><i class="fa fa-caret-right" style="color: #CFD8DC"></i> 项链</p>
+				<p><i class="fa fa-caret-right" style="color: #CFD8DC"></i> 项链</p>
+				<p><i class="fa fa-caret-right" style="color: #CFD8DC"></i> 项链</p>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<p><big><big>- 合作加盟</big></big></p>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<p><big><big>- 在线商城</big></big></p>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<div class="fb"></div>
+<div class="fbb">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<i class="fa fa-phone"></i><span style="color: #fff; font-size:18px"> TEL: 888888888</span>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<i class="fa fa-fax"></i><span style="color: #fff; font-size:18px"> FAX: 888888888</span>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<i class="fa fa-envelope"></i><span style="color: #fff; font-size:18px"> E-MALL: 888888888</span>
+			</div>
+		</div>
+
+		<div class="row" style="color: #888;margin-top: 20px;padding-bottom: 30px;">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				地址：深圳市罗湖区翠竹路与田贝三路交汇处华盐酒店对面翠丽居1082号
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				深圳市七度银匠世家实业有限公司 © 版权所有 粤ICP备14053639号
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="/js/responsiveslides.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+     
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: false,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+  <script>
+	$(document).ready(function() {
+		$('.img-con a').hover(function() {
+			/* Stuff to do when the mouse enters the element */
+			$(this).find('.title').css({
+				'fontSize': '17px',
+				'bottom': '60px',
+				
+			});
+			$(this).find('.btn').css({
+				'bottom': '38px',
+				'display': 'inline'
+			});
+		}, function() {
+			/* Stuff to do when the mouse leaves the element */
+			$(this).find('.title').css({
+				'fontSize': '17px',
+				'bottom': '10px',
+				'color': '  rgb(181, 201, 212)'
+			});
+			$(this).find('.btn').css({
+				'bottom': '0px',
+				'display': 'none'
+			});
+		});
+
+		$('.my-nav li .one').hover(function() {
+			/* Stuff to do when the mouse enters the element */
+			// $(this).hide();
+			$(this).siblings('.en').css({
+				'opacity': '1',
+				'top': '0px'
+			});
+			$(this).css('opacity', '0');
+		}, function() {
+			/* Stuff to do when the mouse leaves the element */
+			$(this).siblings('.en').css({
+				'top': '20px',
+				'opacity': '0'
+
+			});
+			$(this).css('opacity', '1');
+		});
+
+
+
+	// 滚动条低于100px出现右边联系
+	$(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".fix-right").fadeIn(500);
+                } else {
+                    $(".fix-right").fadeOut(500);
+                }
+            });
+
+            $(".fix-right .to-up").click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 1000);
+                return false;
+            });
+        });
+
+	});
+	</script>
+</body>
+</html>
