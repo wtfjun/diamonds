@@ -32,12 +32,12 @@
 	padding: 10px 0;
 	text-align: center;
 	img {
-		width: 120px;
+		width: 100px;
 	}
 	.top-right {
 		position: absolute;
 		right: 20px;
-		top: 80px;
+		top: 30px;
 		p {
 			color: @lc;
 			border: 1px solid #D4DDE2;
@@ -47,9 +47,16 @@
 	}
 	
 }
+@media (max-width: 667px) {
+	#index-header {
+		margin-top: -120px;
+	}		
+}
 #index-header {
 	
 		margin-bottom: -40px;
+		max-width: 1180px;
+		margin: 0 auto;
 	.font {
 		position: absolute;
 		top: 350px;
@@ -68,16 +75,18 @@
 
 header {
 	/*padding: 0 10px;*/
-	margin-bottom: -20px;
+	
 
 	>nav {
 		z-index: 1000;
-		
+		width: 1060px;
+
+		margin: 0 auto!important;
 		border-radius: 0!important;
 		/*border-color: @lc2!important;*/
 		/*border-top: 1px solid @lc!impo;*/
 		background: #fff!important;
-		border-top: 0!important;
+		border: 0!important;
 		border-bottom: 0px solid #a2b1b6!important;
 		@media (min-width: 767px) {
 		.navbar-brand {
@@ -88,12 +97,13 @@ header {
 			background: #fff!important;
 		}
 		.my-nav {
-
+			width: 100%;			
 			position: relative;
 			z-index: 1000!important;
 			>li {
 				
-				
+				width: 20%;
+				min-width: 120px;
 				.one {
 					z-index: 102;
 				}
@@ -101,11 +111,13 @@ header {
 					opacity: 0;
 					z-index: 0;
 					position: absolute;
-					top: 20px;
+					top: 0px;
 				}
 				
 				a {
-					padding-right: 40px;
+					width: 100%;
+					padding-top: 10px;
+					height: 30px;
 					transition: all .4s;
 					-o-transition: all .4s;
 					-moz-transition: all .4s;
@@ -113,49 +125,18 @@ header {
 					color: #000!important;
 					font-size: 16px;
 					font-weight: bold;
+					text-align: center;
+					border-right: 1px solid #ebebeb;
 				}
 
 				
 			}
 		
 		}
-		.navbar-right {
-			margin-right: -30px;
-			a {
-				font-size: 15px;
-				/*background: @blue;*/
-				padding: 15px;
-			  color: #000!important;
-			  
-			}
-			.one:hover {
-				color: #666!important;
-				
-			}
-		}
-		.dropdown-menu {
-			position: absolute;
-			top: -50px;
-			z-index: -1!important;
-			border-color: #fff;
-			width: 100px!important;
-			min-width: 0px;
-			li {
-				width: 100px!important;
-				min-width: 0px;
-				text-align: center;
-			}
-			a{
-				font-size: 12px;
-				color: @font2;
-				line-height: 34px;
-				padding: 0;
-				
-			}
-		}
 
 		/*手机导航按钮*/
 		.navbar-header {
+			z-index: 10;
 			button {
 				background: #fff!important;
 				color: #fff!important;
@@ -174,6 +155,10 @@ header {
 }
 
 	#index-header {
+		z-index: 1100;
+		height: 550px;
+		overflow: hidden;
+		background: url('../img/v2.jpg') no-repeat;
 		.index-header-title {
 			color: #000;
 		}
@@ -363,6 +348,8 @@ header {
   	}
   	.btn {
   		border: 1px solid @lc;
+  		color: #fff;
+  		background: @lc;
   	}
   	.btn:hover {
   		color: #fff;
