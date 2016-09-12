@@ -41,13 +41,29 @@
 </script>
 <header>
 <div class="top">
-	
+			<a style="left:10px;color:#000;position:absolute"><i class="fa fa-search"></i> &nbsp <span style="font-size:12px;">搜索</span></a>
 			<img src="/img/logo3.png" alt="" width="120px;">
 			<br>	
 
 			<!-- <span style="font-size: 14px;line-height:40px;"><b>JINGFU® 景福珠宝</b></span> -->
 
 </div>
+
+
+<div class="search-con" style="display:none">
+	<input type="text">&nbsp &nbsp<span>搜索</span>
+	<img src="/img/x.png" alt="">
+</div>
+<script>
+	$('.top a').click(function(event) {
+		/* Act on the event */
+		$(".search-con").show();
+	});
+	$('.search-con img').click(function(event) {
+		/* Act on the event */
+		$('.search-con').hide();
+	});
+</script>
 
 	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
