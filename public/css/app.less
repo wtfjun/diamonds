@@ -425,11 +425,7 @@ header {
 
 }
 
-@media (max-width: 768px) {
-	.search-con {
-		margin-top: -50px;
-	}
-}
+
 .search-con {
 	position: absolute;
 	width: 100%;
@@ -452,13 +448,25 @@ header {
 		padding: 15px 50px;
 	}
 	img {
-		float: right;
+		position: absolute;
 		width: 18px;
-		padding-right: 5px;
-		padding-top:5px;
+		right: 10px;
+		top:10px;
 	}
 }
-
+@media (max-width: 768px) {
+	.search-con {
+		margin-top: -50px;
+		height: 80px;
+		input {
+			width: 150px;
+			margin-top: 12px;
+		}
+		span {
+			padding: 15px 20px;
+		}
+	}
+}
 .fix-right {
 	display: none;
 	z-index: 1100;
