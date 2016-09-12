@@ -51,13 +51,13 @@
 
 
 <div class="search-con" style="display:none">
-	<input type="text">&nbsp &nbsp<span>搜索</span>
+	<input type="text" placeholder="通过产品名字搜索">&nbsp &nbsp<span>搜索</span>
 	<img src="/img/x.png" alt="">
 </div>
 <script>
 	$('.top a').click(function(event) {
 		/* Act on the event */
-		$(".search-con").show();
+		$(".search-con").toggle();
 	});
 	$('.search-con img').click(function(event) {
 		/* Act on the event */
