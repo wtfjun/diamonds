@@ -75,12 +75,17 @@ header {
 				min-width: 120px;
 				.one {
 					z-index: 102;
-				}
+					/*letter-spacing: 5px;*/
+									}
 				.en {
 					opacity: 0;
 					z-index: 0;
 					position: absolute;
 					top: 0px;
+					font-family: "Verdana";
+					letter-spacing: 5px;
+					font-size: 12px;
+					font-weight: 100;
 				}
 				
 				a {
@@ -161,9 +166,7 @@ header {
 		overflow: hidden;
 		
 		.header-img {
-			width: 100%;
-			height: 550px;
-			background: url('../img/v2.jpg') no-repeat;
+			
 			-webkit-backface-visibility: hidden;
 	    -webkit-animation: imageAnimation 72s linear infinite 0s;
 	    -moz-animation: imageAnimation 72s linear infinite 0s;
@@ -331,6 +334,7 @@ header {
   		img {
   			width: 100%;
   		}	
+  		
   		>a {
   			padding: 8px;
   			display: block;
@@ -353,19 +357,11 @@ header {
 				-moz-transition: all .4s;
 				-webkit-transition: all .4s;
   		}
-  	}
-  	.img-con-7,.img-con-8 {
-
-  			img {
-  				width: 50%;
-  			}
+  		.title {
+  			
   		}
-  	.img-con-1 ,.img-con-4 {
-  		height: 611px;
   	}
-  	.img-con-2,.img-con-3,.img-con-5,.img-con-6,.img-con-7,.img-con-8,.img-con-9,.img-con-10 {
-  		height: 294px;
-  	}
+  	
   	@media (max-width: 768px) {
   		.img-con {
 
@@ -379,11 +375,16 @@ header {
   	}
   	.title {
   		z-index: 0;
-  		width: 100%;
-  		font-size: 17px;
+  	  text-align: center;
+  		font-size: 15px;
   		color: @lc;
   		position: absolute;
   		bottom: 10px;
+  		display: block;
+  			width: 100%;
+  			margin-left: -7px;
+  			font-weight: 100;
+  			
   		transition: all .4s;
   		-o-transition: all .4s;
 			-moz-transition: all .4s;
@@ -393,6 +394,7 @@ header {
   		border: 1px solid @lc;
   		color: #fff;
   		background: @lc;
+  		font-size: 12px;
   	}
   	.btn:hover {
   		color: #fff;
